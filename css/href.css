@@ -1,0 +1,28 @@
+.href {
+    display: inline-block;
+    color:#4169e1;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+    position:relative;
+}
+.href:after {
+    background-color: #4169e1;
+    display: block;
+    content: "";
+    margin-top: 5px;
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .8s ease-in-out;
+    -moz--transition: width .8s ease-in-out;
+    transition: width .8s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.href:hover:after,
+.href:focus:after {
+    width: 100%;
+}
